@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>FastShop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<!--        CSS, jQuery, jQueryMobile y JS-->
+        <link href="css/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+        <script src="js/codigo.js" type="text/javascript"></script>
+        
+        
+    </head>
+    <body>
+        
+        <!--pág inicial 'lista'-->
+        <div data-role="page" id="lista">
+            <div data-role="header" data-theme="a">
+                <a href='enviar' class="enviar" data-icon='action' data-theme='a' id="btn_enviar"></a>
+                <h1>FastShop</h1>
+                <a href='ok' id="btn_ok">OK</a>
+            </div>
+            
+                
+            <div data-role="content">
+                Productos añadidos a la cesta:
+                <ul data-role="listview" class="right-checkbox" id="lista_compra" data-inset="true">                     
+<!--                    <li data-icon="false" class="listItem"> 
+                        <a href="#" class="ui-btn">Tomate</a>
+                        <div class="right-radio">
+                            <label><input type="checkbox" name="submt_Identity" id="submt_Identity" class="custom" />&nbsp;</label>     
+                        </div>
+                    </li>-->
+                </ul>
+                
+                <!--Cuadrado emergente para el envío por mail de la lista-->
+                <div class="mailing" id="mailing">
+                    <input id="txt_mail" type="text" placeholder="mail destinatario">
+                    <div class="btn_enviarMail" id="btn_enviarMail">Enviar</div>
+                    <div class="btn_cancel" id="btn_cancelMail">Cancelar</div>
+                </div>
+            </div>
+
+            <!-- footer  -->
+            <div data-role="footer" data-position="fixed" data-id="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a class="ui-btn-active ui-state-persist" href="#lista" data-icon="bars" data-transition="fade">Lista<span id="counter_lista" class="ui-li-count">0</span></a></li> 
+                        <li><a href="#preparar" data-icon="plus" data-transition="fade">Preparar</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <!--Fin de la pág 'lista'-->
+        
+        
+        
+        
+        <!--pág 'preparar'-->
+        <div data-role="page" id="preparar">
+            <div data-role="header" data-theme="a">
+                <a href='enviar' class="enviar" data-icon='plus' data-theme='a' id="btn_insertarArticulo"></a>
+                <h1>FastShop</h1>
+            </div>
+            
+            
+            <div data-role="content">
+                <ul data-role="listview" class="right-checkbox" id="lista_articulos" data-filter="true" data-filter-placeholder="buscar artículo">     
+<!--                    <li data-icon="false" class="listItem">
+                        <a href="#" class="ui-btn">Zanahorias</a>
+                        <div class="right-radio">
+                            <a href="#" data-role="button" data-inline="true" data-icon="plus"></a>
+                        </div>
+                    </li>-->
+                </ul>
+                
+                <!--Cuadrado emergente para la creación de nuevos artículos-->
+                <div class="new_articulo" id="new_articulo">
+<!--                    <h2>Nuevo artículo</h2>-->
+                    <input id="txt_articulo" type="text" placeholder="Nuevo artículo">
+                    <div class="btn_create" id="btn_anadir">Añadir</div>
+                    <div class="btn_cancel" id="btn_cancel">Cancelar</div>
+                </div>
+            </div>
+            
+            
+            <!-- footer  -->
+            <div data-role="footer" data-position="fixed" data-id="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#lista" data-icon="bars" data-transition="fade">Lista<span id="counter_preparar" class="ui-li-count">0</span></a></li> 
+                        <li><a class="ui-btn-active ui-state-persist" href="#preparar" data-icon="plus" data-transition="fade">Preparar</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <!--Fin de la pág 'preparar'-->
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+

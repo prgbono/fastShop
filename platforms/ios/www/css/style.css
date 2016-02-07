@@ -1,0 +1,145 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}body{font: 1.2em/1.5 "Helvetica", sans-serif;}li{list-style: none;}a{display: block;text-decoration: none;}
+
+#lista_compra  .right-checkbox a {
+    padding-right: 132px !important;
+}
+
+#lista_compra .right-radio {
+    position: absolute;
+    top: 1px;
+    bottom: 0px;
+    right: 0px;
+    width: 90px;
+    height: 40px;
+    /*border: 3px solid pink;*/
+}
+
+.ui-bar-a{
+    background-color: #3388CC;
+}
+
+.ui-bar-a h1{
+    color: #fff;
+    font-weight: lighter;
+}
+
+#lista_compra  .right-radio .ui-checkbox {
+    display: inline;
+    float: left;
+    padding: 0;
+    margin: 0;
+    /*border: 10px solid green;*/
+}
+
+#lista_compra .right-radio .ui-checkbox label {
+    padding-right: 0;
+    padding-left: 36px;
+    border:0;
+    border-radius: 0;
+}
+
+#lista_articulos  .right-checkbox a {
+    padding-right: 132px !important;
+}
+
+#lista_articulos .right-radio {
+    position: absolute;
+    top: 1px;
+    bottom: 0px;
+    right: 0px;
+    width: 90px;
+    /*border: 3px solid pink;*/
+}
+
+#lista_articulos .right-radio .ui-checkbox {
+    display: inline;
+    float: left;
+    padding: 0;
+    margin: 0;
+    /*border: 10px solid green;*/
+}
+
+#lista_articulos .right-radio .ui-checkbox label {
+    padding-right: 0;
+    padding-left: 36px;
+    border:0;
+    border-radius: 0;
+}
+
+.enviar{
+/*    border: 3px solid pink;*/
+    height: 35px;
+    top: 3px;
+    width: 25px;
+}
+
+.new_articulo {
+    position: fixed;
+    z-index: 999;
+    top: 65px;
+    right: -100%;
+    /*right: 20px; Cuando se vea estará a 20*/
+    width: 70%;
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+    border: 2px solid #fff;
+    text-align: center;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+.mailing{
+    position: fixed;
+    z-index: 999;
+    top: 65px;
+    right: -100%;
+    /*right: 20px; Cuando se vea estará a 20*/
+    width: 70%;
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+    border: 2px solid #fff;
+    text-align: center;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+
+.btn_create, .btn_cancel{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.btn_enviarMail{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.btn_create {
+    background: #3388CC;
+    color: #fff;
+    cursor: pointer;  //Esto no afecta a móviles. Es para que salga la manita en el cursor
+}
+
+.btn_enviarMail{
+    background: #3388CC;
+    color: #fff;
+    cursor: pointer;  //Esto no afecta a móviles. Es para que salga la manita en el cursor
+}
+
+.btn_cancel{
+    background: #fff;
+    color: #3388CC;   
+    cursor: pointer;
+}
+
+
